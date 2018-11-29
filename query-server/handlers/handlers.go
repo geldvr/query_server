@@ -67,11 +67,11 @@ func (f *filter) getPipe() ([]bson.M, []*response.Error) {
 	)
 
 	if f.page, err = strconv.Atoi(f.Page); err != nil && f.Page != "" {
-		errs = append(errs, &response.Error{Field:"page", Message: "must be int"})
+		errs = append(errs, &response.Error{Field: "page", Message: "must be int"})
 	}
 
 	if f.limit, err = strconv.Atoi(f.Limit); err != nil && f.Limit != "" {
-		errs = append(errs, &response.Error{Field:"limit", Message: "must be int"})
+		errs = append(errs, &response.Error{Field: "limit", Message: "must be int"})
 	}
 
 	if f.limit <= 0 {
