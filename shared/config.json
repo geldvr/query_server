@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "mongodb": {
+    "dsn": "mongodb://localhost/itv",
+    "ssl": false
+  },
+  "query-server": {
+    "port": "8080",
+    "maxQueue": 100,
+    "maxWorker": 5
+  }
+}
