@@ -11,7 +11,7 @@ go get -u github.com/kardianos/govendor
 ### Install go dependencies
 
 ```bash
-$ cd itv/vendor
+$ cd query-server/vendor
 $ govendor sync
 ```
 
@@ -19,6 +19,6 @@ $ govendor sync
 
 ```bash
 $ mongod
-$ cd itv/query-server
+$ cd query-server
 $ go run main.go
 ```
